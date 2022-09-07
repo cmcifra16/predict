@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+
+
+
+{% extends 'base.html' %}
+
+{% block head %}
+   
+{% endblock %}
+
+{% block body %}
+<body class="landing-page sidebar-collapse">
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('../static/img/desk_chair.jpg')">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="title">login</h1>
+          
+          <br>
+          {% with messages = get_flashed_messages() %}
+            {% if messages: %}
+              {% for message in messages: %}
+                <h4>{{ message }}</h4>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <form action="/patient_login" method="GET">
+            <button type="submit" class="btn btn-danger btn-raised btn-lg">
+              <i class="fa fa-user-circle-o"></i> 
+               Patient Login
+            </button>
+          </form>
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+   
+   
+   
+   
+   
+   
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+   
+   
+   
+   
+   
+   
+{% endblock %}

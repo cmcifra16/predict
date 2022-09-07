@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="sidebar">
+  </div>
+
+
+  <h3 class="card-title">{{ patient_details.fname }} </h3>
+  <h3 class="card-title">{{ patient_details.lname }} </h3>
+  <h3 class="card-title">{{ patient_details.mname }} </h3>
+  <h3 class="card-title">{{ patient_details.gender }} </h3>
+
+<div>
+ 
+  <form action="/logout" method="GET">
+    <button type="submit" class="btn btn-danger btn-raised btn-lg">Log Out</button>
+  </form>
+  <form action="/predict" method="GET">
+    <button type="submit" class="btn btn-danger btn-raised btn-lg">Predict</button>
+  </form>
+</div>
+
+</body>
+</html>
